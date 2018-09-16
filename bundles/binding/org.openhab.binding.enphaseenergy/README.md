@@ -14,6 +14,12 @@ Your installer should have provided your with an [Enlight Manager Account](https
 
 * Copy the [API Key for the Application](https://developer.enphase.com/admin/applications) and the user id from the Authorization URL to use in the next section.
 
+* Get the system ID of your system by typing the following URL into your browswer 
+```
+https://api.enphaseenergy.com/api/v2/systems?key=KEY&user_id=USER 
+```
+  Where KEY is the API Key for your application and USER is the user ID from the Authorization URL
+
 ## Binding Configuration
 
 This binding must be configured in the file `services/enphaseenergy.cfg`.
@@ -26,6 +32,8 @@ This binding must be configured in the file `services/enphaseenergy.cfg`.
 
 
 ## Item Configuration
+
+Replace the 12345 in the example items with your system ID that was retrieved earlier
 
 Example items:
 
